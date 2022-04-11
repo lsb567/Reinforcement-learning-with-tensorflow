@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 
-env = gym.make('Pendulum-v0')
+env = gym.make('Pendulum-v1')
 env = env.unwrapped
 env.seed(1)
 MEMORY_SIZE = 3000

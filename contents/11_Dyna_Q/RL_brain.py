@@ -75,7 +75,8 @@ class EnvModel:
                     index=self.database.columns,
                     name=s,
                 ))
-        self.database.set_value(s, a, (r, s_))
+        # self.database.set_value(s, a, (r, s_))
+        self.database.at[s, a] = (r, s_)
 
     def sample_s_a(self):
         s = np.random.choice(self.database.index)
