@@ -38,7 +38,7 @@ class DeepQNetwork:
         self.lr = learning_rate
         self.gamma = reward_decay
         self.epsilon_max = e_greedy
-        self.replace_target_iter = replace_target_iter
+        self.replace_target_iter = replace_target_iter  # 隔多少步更换一次
         self.memory_size = memory_size
         self.batch_size = batch_size
         self.epsilon_increment = e_greedy_increment
